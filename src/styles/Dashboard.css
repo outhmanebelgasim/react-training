@@ -1,0 +1,17 @@
+.login {
+  font-size: 1.5em;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.logout {
+  font-size: 1.5em;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+}

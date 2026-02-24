@@ -1,0 +1,106 @@
+/* Container principal */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+
+/* Carte du compteur */
+.counter-card {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-width: 350px;
+}
+
+/* Header du compteur */
+.header {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container des boutons */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Style de base des boutons */
+button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Bouton Increment (Vert) */
+.increment {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+}
+
+.increment:hover {
+  background: linear-gradient(135deg, #0e7f6f 0%, #2dd768 100%);
+}
+
+/* Bouton Decrement (Rouge) */
+.decrement {
+  background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+  color: white;
+}
+
+.decrement:hover {
+  background: linear-gradient(135deg, #d62839 0%, #e04a36 100%);
+}
+
+/* Bouton Reset (Gris) */
+.reset {
+  background: linear-gradient(135deg, #636363 0%, #a2ab58 100%);
+  color: white;
+}
+
+.reset:hover {
+  background: linear-gradient(135deg, #4a4a4a 0%, #8a9445 100%);
+}
+
+/* Animation du compteur */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.header {
+  animation: pulse 2s ease-in-out infinite;
+}
