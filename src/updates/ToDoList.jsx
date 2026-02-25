@@ -4,20 +4,20 @@ function ToDoList() {
   const [tasks, setTask] = useState(["Wake Up", "Take Bath", "Go To School"]);
   const [newTask, setNewTask] = useState("");
 
-  const handleTask = (event) => {
+  const handleInput = (event) => {
     setNewTask(event.target.value);
   };
 
   function addTask() {
     if (newTask.trim() !== "") {
-      setTask((t) => [...t, tasks]);
+      setTask((t) => [...t, newTask]);
       setNewTask("");
     }
   }
 
   function deleteTask(index) {
-    const updateTask = tasks.filter((_, i) => i !== index);
-    setTask(updateTask);
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTask(updatedTasks);
   }
 
   function moveUp(index) {
@@ -44,14 +44,17 @@ function ToDoList() {
 
   return (
     <div>
-      <h1> To Do List</h1>
+      <h1>To Do List</h1>
+
       <input
         type="text"
+        placeholder="Enter a task"
         value={newTask}
-        placeholder="Enter a Task"
-        onChange={handleTask}
+        onChange={handleInput}
       />
-      <button onClick={addTask}>add</button>
+
+      <button onClick={addTask}>Add</button>
+
       <ul>
         {tasks.map((element, index) => (
           <li key={index}>

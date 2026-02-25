@@ -24,6 +24,7 @@ import UpdateObject from "./updates/UpdateObject.jsx";
 import UpdateArray from "./updates/UpdateArray.jsx";
 import ArrayObject from "./updates/ArrayObject.jsx";
 import ToDoList from "./updates/ToDoList.jsx";
+import WindowResize from "./updates/WindowResize.jsx";
 
 function App() {
   return (
@@ -55,7 +56,8 @@ function App() {
       {/* <UpdateObject /> */}
       {/* <UpdateArray /> */}
       {/* <ArrayObject /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      <WindowResize />
     </>
   );
 }
