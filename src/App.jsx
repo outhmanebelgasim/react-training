@@ -23,6 +23,7 @@ import ColorPicker from "./hooks/ColorPicker.jsx";
 import UpdateObject from "./updates/UpdateObject.jsx";
 import UpdateArray from "./updates/UpdateArray.jsx";
 import ArrayObject from "./updates/ArrayObject.jsx";
+import ToDoList from "./updates/ToDoList.jsx";
 
 function App() {
   return (
@@ -53,7 +54,8 @@ function App() {
       {/* <ColorPicker /> */}
       {/* <UpdateObject /> */}
       {/* <UpdateArray /> */}
-      <ArrayObject />
+      {/* <ArrayObject /> */}
+      <ToDoList />
     </>
   );
 }
