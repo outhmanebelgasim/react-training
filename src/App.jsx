@@ -26,6 +26,7 @@ import ArrayObject from "./updates/ArrayObject.jsx";
 import ToDoList from "./updates/ToDoList.jsx";
 import WindowResize from "./updates/WindowResize.jsx";
 import DigitalClock from "./hooks/DigitalClock.jsx";
+import ComponentA from "./hooks/ComponentA.jsx";
 
 function App() {
   return (
@@ -59,7 +60,8 @@ function App() {
       {/* <ArrayObject /> */}
       {/* <ToDoList /> */}
       {/* <WindowResize /> */}
-      <DigitalClock />
+      {/* <DigitalClock /> */}
+      <ComponentA />
     </>
   );
 }
