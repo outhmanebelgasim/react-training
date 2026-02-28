@@ -27,6 +27,8 @@ import ToDoList from "./updates/ToDoList.jsx";
 import WindowResize from "./updates/WindowResize.jsx";
 import DigitalClock from "./hooks/DigitalClock.jsx";
 import ComponentA from "./hooks/ComponentA.jsx";
+import UseRefTest from "./hooks/UseRefTest.jsx";
+import FocusInput from "./hooks/FocusInput.jsx";
 
 function App() {
   return (
@@ -61,7 +63,9 @@ function App() {
       {/* <ToDoList /> */}
       {/* <WindowResize /> */}
       {/* <DigitalClock /> */}
-      <ComponentA />
+      {/* <ComponentA /> */}
+      {/* <UseRefTest /> */}
+      <FocusInput />
     </>
   );
 }
